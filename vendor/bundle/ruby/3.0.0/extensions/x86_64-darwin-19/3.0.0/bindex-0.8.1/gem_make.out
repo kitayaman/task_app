@@ -1,0 +1,15 @@
+current directory: /Users/kitayan/task_app/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/kitayan/.rbenv/versions/3.0.1/bin/ruby -I /Users/kitayan/.rbenv/versions/3.0.1/lib/ruby/3.0.0 -r ./siteconf20210516-6213-bq449e.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kitayan/task_app/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/kitayan/task_app/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/kitayan/task_app/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210516-6213-we2t8p/skiptrace/internal

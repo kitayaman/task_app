@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <header>
+      <h3>Ruby on Rails スケジュール管理アプリ</h3>
+    </header>
     <%= yield %>
+    <footer>
+      <h3>現在の日時：<%= l Time.current, format: :short %><span>スケジュール合計：<%= Plan.count %></span></h3>
+    </footer>
   </body>
 </html>

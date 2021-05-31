@@ -1,0 +1,32 @@
+<h3>スケジュール詳細</h3>
+
+<table>
+  <tr>
+    <th>タイトル</th>
+    <td><%= @plan.title %></td>
+  </tr>
+  <tr>
+    <th>開始日</th>
+    <td><%= @plan.start_date.to_s(:date_jp) %></td>
+  </tr>
+  <tr>
+    <th>終了日</th>
+    <td><%= @plan.finish_date.to_s(:date_jp) %></td>
+  </tr>
+  <tr>
+    <th>終日</th>
+    <td><%= @plan.all_day %></td>
+  </tr>
+  <tr>
+    <th>スケジュールメモ</th>
+    <td><%= @plan.memo %></td>
+  </tr>
+</table>
+
+<div></div>
+  <ul>
+    <li><%= link_to"スケジュール一覧に戻る", :plans %></li>
+    <li><%= link_to"スケジュールを編集する", [:edit, @plan] %></li>
+    <li><%= link_to"スケジュールを削除する", method: :delete, data: { confirm: "本当に削除しますか？" } %></li>
+  </ul>
+</div>
